@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://web.tiscalinet.it/marcellou/%{name}-%{version}.tar.gz
+# Source0-md5:	96e77ffddad5c8f63d4e411f4e033d14
 Patch0:		%{name}-fix_script.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
