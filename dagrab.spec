@@ -5,8 +5,6 @@ Version:	0.3.5
 Release:	1
 License:	GPL
 Group:		Applications/Sound
-Group(de):	Applikationen/Laut
-Group(pl):	Aplikacje/D¼wiêk
 Source0:	http://web.tiscalinet.it/marcellou/%{name}-%{version}.tar.gz
 Patch0:		%{name}-fix_script.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
