@@ -5,11 +5,11 @@ Version:	0.3.5
 Release:	1
 License:	GPL
 Group:		Applications/Sound
+Group(de):	Applikationen/Laut
 Group(pl):	Aplikacje/D¼wiêk
 Source0:	http://web.tiscalinet.it/marcellou/%{name}-%{version}.tar.gz
-Patch0:		dagrab-fix_script.patch
+Patch0:		%{name}-fix_script.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 DAGRAB is a program for reading audio tracks from an IDE cdrom drive
@@ -24,19 +24,18 @@ wav.
 %patch -p1
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install -s dagrab $RPM_BUILD_ROOT%{_bindir}
+install dagrab $RPM_BUILD_ROOT%{_bindir}
 install dagmp3cd dagmp3enc $RPM_BUILD_ROOT%{_bindir}
 
 install dagrab.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf README INSTALL *.lsm \
-	$RPM_BUILD_ROOT%{_mandir}/man1/*
+gzip -9nf README INSTALL *.lsm
 
 %clean
 rm -rf $RPM_BUILD_ROOT
