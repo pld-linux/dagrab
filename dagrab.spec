@@ -33,13 +33,11 @@ install dagmp3cd dagmp3enc $RPM_BUILD_ROOT%{_bindir}
 
 install dagrab.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf README INSTALL *.lsm
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%doc *.gz
+%doc README INSTALL *.lsm
 %{_mandir}/man1/*
