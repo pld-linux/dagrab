@@ -16,7 +16,7 @@ DAGRAB is a program for reading audio tracks from an IDE cdrom drive
 into wav sound files.
 
 %description -l pl
-DAGRAB to program do zgrywania scie¿ek audio z cdromów IDE do plików
+DAGRAB to program do zgrywania ¶cie¿ek audio z cdromów IDE do plików
 wav.
 
 %prep
