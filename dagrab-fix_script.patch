@@ -1,0 +1,15 @@
+diff -Nru dagrab-0.3.5/dagmp3cd dagrab-0.3.5.new/dagmp3cd
+--- dagrab-0.3.5/dagmp3cd	Sat Feb 19 12:34:44 2000
++++ dagrab-0.3.5.new/dagmp3cd	Tue May  9 15:17:56 2000
+@@ -1,8 +1,8 @@
+-#/usr/bin/sh
+-function checkarg(){
++#!/bin/sh
++checkarg(){
+     if test -z $1; then usage;else shift;fi
+ };
+-function usage(){
++usage(){
+     echo "dagmp3cd - grabs one or more tracks from a cd and encodes them in mp3"
+     echo "	also sets ID3 tags using CDDB data if MPEG::MP3Info perl module "
+     echo "	is available."
