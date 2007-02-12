@@ -1,5 +1,5 @@
 Summary:	Get *.WAV files from audio cd's
-Summary(pl):	Kopiuje scieøki audio do plikÛw *.WAV
+Summary(pl.UTF-8):   Kopiuje scie≈ºki audio do plik√≥w *.WAV
 Name:		dagrab
 Version:	0.3.5
 Release:	1
@@ -15,8 +15,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 DAGRAB is a program for reading audio tracks from an IDE cdrom drive
 into WAV sound files.
 
-%description -l pl
-DAGRAB to program do zgrywania ∂cieøek audio z cdromÛw IDE do plikÛw
+%description -l pl.UTF-8
+DAGRAB to program do zgrywania ≈õcie≈ºek audio z cdrom√≥w IDE do plik√≥w
 WAV.
 
 %prep
