@@ -1,5 +1,5 @@
 Summary:	Get *.WAV files from audio cd's
-Summary(pl.UTF-8):   Kopiuje scieżki audio do plików *.WAV
+Summary(pl.UTF-8):	Kopiuje scieżki audio do plików *.WAV
 Name:		dagrab
 Version:	0.3.5
 Release:	1
